@@ -1,0 +1,59 @@
+---
+---
+
+// add bootstrap variable settings here
+
+@import 'bootswatch/variables';
+@import 'bootstrap/stylesheets/bootstrap';
+@import 'bootswatch/bootswatch';
+
+@import 'jquery.fullpage';
+@import 'doc.min';
+
+
+.doc-sidebar {
+  width: 200px;
+}
+.doc-menu {
+  list-style: none;
+  padding-left: 0;
+}
+.doc-menu > li {
+  margin-bottom: 5px;
+}
+.doc-menu > li > a {
+  display: block;
+  padding: 5px 15px;
+  border-left: 4px solid transparent;
+  color: #616670;
+}
+.doc-menu > li > a:hover,
+.doc-menu > li > a:focus {
+  color: #40babd;
+  text-decoration: none;
+  background: none;
+}
+
+.doc-sub-menu {
+  list-style: none;
+  padding-left: 0;
+}
+.doc-sub-menu > li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.doc-sub-menu > li:first-child {
+  padding-top: 5px;
+}
+.doc-sub-menu > li > a {
+  display: block;
+  color: #616670;
+  padding: 0;
+  padding-left: 34px;
+  background: none;
+}
+.doc-sub-menu > li > a:hover {
+  color: #40babd;
+  text-decoration: none;
+  background: none;
+}
