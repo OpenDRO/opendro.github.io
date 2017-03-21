@@ -9,20 +9,12 @@
 
 @import 'jquery.fullpage';
 
-.documentation {
-  padding-top:40px;
+
+#footer {
+  height:50px;
 }
 
-#markdown-toc {
-  display:none;
-  position: fixed;
-  top:120px;
-  left:0%;
-}
 
-@media (min-width: $screen-sm-min) {
-  #markdown-toc {
-    display:block;
-  }
-}
+
+
 
