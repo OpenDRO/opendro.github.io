@@ -1,26 +1,44 @@
 ---
-layout: default
 ---
-<div id="fullpage">
-    <section>
-        <div class="container">
-            <p>logo</p>
-            <p>goal</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} - {{ site.title }}</title>
+
+        {% include head.html %}
+        <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/home.css" >
+
+    </head>
+    <body>
+        {% include navbar.html %}}
+        <div id="fullpage">
+            <section id="intro">
+                <div class="container">
+                    <img src="{{site.path}}/images/opendrologo.png"/>
+                    <h3>Digital Read Out based on open standards and designs.</h3>
+                    <img src="{{site.path}}/images/drodisplay.png"/>
+                </div>
+            </section>
+            <section id="features">
+                <div class="container">
+                    <p>features</p>
+                </div>
+            </section>
+            <section id="gettingstarted">
+                <div class="container">
+                    <p>getting started</p>
+                </div>
+            </section>
+            <section id="footer" class="fp-auto-height">
+                <div class="container">
+                    <p>footer</p>
+                </div>
+            </section>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <p>features</p>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <p>getting started</p>
-        </div>
-    </section>
-    <section id="footer" class="fp-auto-height">
-        <div class="container">
-            <p>footer</p>
-        </div>
-    </section>
-</div>
+
+        <script src="{{ site.path }}/js/fullpage/jquery.fullpage.js"></script>
+        <script src="{{ site.path }}/js/home.js"></script>
+    </body>
+</html>
+
