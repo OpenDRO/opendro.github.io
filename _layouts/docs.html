@@ -5,12 +5,18 @@
     <title>{{ site.title }} | Documentation</title>
 
     {% include head.html %}
+
     <link rel="stylesheet" href="{{ site.path }}/css/docs.css">
+    <link rel="stylesheet" href="{{ site.path }}/css/highlight/androidstudio.css">
+
     <script src="{{ site.path }}/js/bootstrap-toc.js"></script>
-    <script src="{{ site.path }}/js/prism.js"></script>
+    <script src="{{ site.path }}/js/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script src="{{ site.path }}/js/highlight.pack.js"></script>
+
     <script src="{{ site.path }}/js/docs.js"></script>
 
 </head>
+
 <body>
     {% include navbar.html %}}
     <div class="documentation">

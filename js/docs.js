@@ -10,16 +10,17 @@ $(function() {
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
-        var target = this.hash;
-        var $target = $(target);
+        var target = $(this.hash.replace(":","\\:"));
 
         $(this).blur();
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 75
+            'scrollTop': target.offset().top - 75
         }, 900, 'swing', function () {
             window.location.hash = '1' + target;
         });
     });
+
+    hljs.initHighlightingOnLoad();
 
 });
