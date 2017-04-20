@@ -4,24 +4,22 @@ title: intro docs
 ---
 
 
----
-__Advertisement :)__
+# Getting Started
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+find us on kickstarter!
 
-You will like those projects!
+## Setup
 
----
+what about this
 
-# h1 Heading 8-)
+# Next Steps
+
+
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
-###### h6 Heading
+###### blah
 
 
 ## Horizontal Rules

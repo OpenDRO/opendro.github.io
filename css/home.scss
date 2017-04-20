@@ -1,8 +1,37 @@
 ---
 ---
 
+@import 'bootswatch/variables';
+
+.navbar-fixed-top {
+  position: relative;
+  margin:0;
+}
+
 #intro {
-  .container {
-    text-align:center;
+  text-align: center;
+
+  .fp-tableCell {
+    vertical-align:top;
   }
+  .splash {
+    background: $brand-primary;
+    color: white;
+    padding:0 0 10px 0;
+
+    h3 {
+      font-size:20px;
+    }
+
+    img.machines {
+      width:auto;
+      max-height:190px;
+    }
+  }
+
+  img.products {
+    height:100px;
+    width:auto;
+  }
+
 }

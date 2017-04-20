@@ -1,40 +1,96 @@
 ---
 ---
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }} - {{ site.title }}</title>
-
         {% include head.html %}
         <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/home.css" >
-
     </head>
     <body>
-        {% include navbar.html %}}
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/#started">About</a>
+                    </li>
+                    <li>
+                        <a href="/docs/">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="/blog/">Support</a>
+                    </li>
+                    <li>
+                        <a href="/support/">Blog</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
         <div id="fullpage">
             <section id="intro">
+                <div class="row splash">
+                    <div class="col-xs-3">
+                        <img class="machines" src="{{ site.path }}/images/splash-lathe.png"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="{{ site.path }}/images/splash.png"/>
+                        <h3>Digital Read Out Technolgoy Based on Open Standards and Designs</h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <img class="machines" src="{{ site.path }}/images/splash-mill.png"/>
+                    </div>
+                </div>
                 <div class="container">
-                    <img src="{{site.path}}/images/opendrologo.png"/>
-                    <h3>Digital Read Out based on open standards and designs.</h3>
-                    <img src="{{site.path}}/images/drodisplay.png"/>
+                    <div class="row products">
+                        <div class="col-md-4">
+                            <h2>Digital Scales</h2>
+                            <img class="products" src="{{ site.path }}/images/product-scales.png"/>
+                            <p>The OpenDRO solution is compatible with commercially available quadrature products as well as
+                                an open-source design which can be built for under $25 per axis, easily mountable and expandable to
+                                nearly any length. Development is in-progress to support iGaging, DigiMag, AccuRemote, Shahe and
+                                other Mixed Scale products.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Hardware</h2>
+                            <img class="products" src="{{ site.path }}/images/product-hardware.png"/>
+                            <p>The open-sourced hardware design includes a PCB layout, bluetooth connectivity readily
+                                available components. The arduino ecosystem far surpasses other microcontrollers which makes the
+                                solution less expensive and more widely available.
+                            </p>
+                        </div>
+                       <div class="col-md-4">
+                            <h2>App</h2>
+                            <img class="products" src="{{ site.path }}/images/product-app.png"/>
+                            <p>Fully-compatible with the proprietary TouchDRO app for android, the OpenDRO Project
+                                intends to develop an open source app to  expand functionality as well as extending to the iPad platform.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section id="features">
+            <div class="navbar navbar-default navbar-fixed-bottom">
                 <div class="container">
-                    <p>features</p>
+                    <div class="navbar-collapse collapse" id="navbar-footer">
+                        <ul class="nav navbar-nav">
+                            <li>Copyright &copyright 2017</li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"></a></li>
+                            <li><a href="mailto:info@opendro.org">contact</a></li>
+                        </ul>
+
+                    </div>
                 </div>
-            </section>
-            <section id="gettingstarted">
-                <div class="container">
-                    <p>getting started</p>
-                </div>
-            </section>
-            <section id="footer" class="fp-auto-height">
-                <div class="container">
-                    <p>footer</p>
-                </div>
-            </section>
+            </div>
         </div>
 
         <script src="{{ site.path }}/js/fullpage/jquery.fullpage.js"></script>
